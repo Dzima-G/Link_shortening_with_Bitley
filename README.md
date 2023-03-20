@@ -13,6 +13,30 @@ pip install -r requirements.txt
 ```
 Рекомедуется использовать [vittualenv/venv] (https://docs.python.org/3/library/venv.html) для изоляции проекта.
 
+
+### Настройка переменных окружения:
+
+Вам понадобится сервис Bitly (https://app.bitly.com/bbt2/) — зарегистрируйтесь
+
+Генератор токенов (https://app.bitly.com/settings/integrations/)
+
+Получите персональный ключ - GENERIC ACCESS TOKEN — нужный тип “токен”. Он нужен для взаимодействия с API Bitly. 
+
+Создать файл ```.env``` в корневом каталоге 
+
+```
+.
+├── .env
+└── main.py
+```
+с текстом:
+```
+BITLY_TOKEN = GENERIC ACCESS TOKEN
+my_secret = os.environ['BITLY_TOKEN']
+```
+где GENERIC ACCESS TOKEN, полученый вами токен на Bitly.
+
+
 ### Применение
  Приложение работает из консольной утилиты.
 ```
