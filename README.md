@@ -31,8 +31,7 @@ pip install -r requirements.txt
 ```
 с текстом:
 ```
-BITLY_TOKEN = GENERIC ACCESS TOKEN
-my_secret = os.environ['BITLY_TOKEN']
+BITLY_TOKEN=GENERIC ACCESS TOKEN
 ```
 где GENERIC ACCESS TOKEN, полученый вами токен на Bitly.
 
